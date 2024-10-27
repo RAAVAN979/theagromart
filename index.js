@@ -126,7 +126,7 @@ function fetchAddress(latitude, longitude){
     fetch(geocodeUrl)
     .then(response => response.json())
     .then(data => {
-        if (data.status === 'ok'){
+        if (data.status === 'OK'){
             const address = data.results[0].formatted_address;
             document.getElementById('showadd').textContent = address;
         } else {
