@@ -102,7 +102,7 @@ function getLocation (){
 
         mapId.href = `https://www.google.com/maps/@${latitude},${longitude},15z`;
 
-        mapId.textContent = `latitude: ${latitude}, longitude: ${longitude}`;
+        
 
     }
 
