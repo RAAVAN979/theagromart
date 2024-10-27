@@ -97,6 +97,9 @@ function getLocation (){
         const latitude = position.coords.latitude;
 
         showAdd.textContent = '';
+
+        fetchAddress(latitude, longitude);
+
         mapId.href = `https://www.google.com/maps/@${latitude},${longitude},15z`;
 
         mapId.textContent = `latitude: ${latitude}, longitude: ${longitude}`;
@@ -114,6 +117,25 @@ function getLocation (){
         navigator.geolocation.getCurrentPosition(success, error);
     }
  
+}
+
+function fetchAddress(latitude, longitude){
+    const apiKey = 'AIzaSyC2RnEvU-apdVdsyTkHv4X5LoTVgt1Fxw0';
+    const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${apiKey}`;
+
+    fetch(geocodeUrl)
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'ok'){
+            const address = data.results[0].formatted_address;
+            document.getElementById('showadd').textContent = address;
+        } else {
+            document.getElementById('showadd').textContent = "Unable to get your address";
+        }
+    })
+     .catch(error => {
+        document.getElementById('showadd').textContent = "Error retrieving address";
+    });
 }
 document.getElementById('getadd').addEventListener('click', getLocation);
     
