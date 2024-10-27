@@ -1,0 +1,317 @@
+ body{
+    margin: 0;
+    padding: 0;
+ }
+
+header{ display: flex; align-items: center; padding: 10px 10px 10px 10px;
+    height: 100px; gap: 30px;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(292deg, rgba(2,0,36,1) 0%, rgba(0,242,76,1) 91%, rgb(21, 255, 0) 100%); z-index: 1;
+}
+
+.tit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+    margin: 0;
+}
+
+h6{
+    color: white;
+    margin-top:-40px; letter-spacing: 5px; font-size: 10px;
+}
+h1{text-align: center; color: whitesmoke; font-size: 60px}
+
+.logo{
+    height: 95px;
+    width: 100px;
+    filter: drop-shadow(3px 3px 3px orange);
+    border-radius: 50%;
+}
+
+header div button{  font-size: 10px;
+    height: 90px; width: 70px; cursor: pointer; background: transparent; border: none; color: white; font-family: arial; font-weight: bold;
+}
+
+header div img{ margin-bottom: 10px;
+    height: 30px; width: 30px;  
+}
+
+.cart{ color: white; font-family: arial; font-size: 10px;
+    display: flex; flex-direction: column; background: transparent; border: none; cursor: pointer;
+    justify-content: center; align-items: center;
+}
+.cart img{ background:transparent;
+    height: 50px; width: 50px;
+}
+
+.profile{
+    background: transparent; border: none; cursor: pointer;
+}
+
+.prof{
+    height: 70px; width: 70px; border: 2px solid white; border-radius: 50%;
+}
+
+nav{ display: flex;
+    flex-direction: column;
+   gap: 50px;
+    position: absolute;
+   right: 0;
+    top: 40px;
+    height: 100vh;
+    z-index: 1;
+    width: 13vw; justify-content: center;
+    align-items: center;
+    
+   
+    
+}
+
+nav .slider { position: absolute; cursor: pointer; 
+    background: transparent; border: none; 
+    top: 0;
+}
+
+ .lis{display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    border-radius: 10px;
+    gap: 80px;
+    height: 100vh;
+    width: 11vw;;
+    list-style: none;
+    padding: 10px 16px 10px 30px;
+    justify-content: center; transition: 1s linear; visibility: hidden; opacity: 0;}
+
+   
+ .lis.show{background: silver;
+
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 10px;
+    
+    list-style: none;
+    justify-content: center;
+    
+    gap: 80px;
+    height: 100vh;
+    width: 13vw;;
+    
+    padding: 10px 16px 10px 30px;
+    opacity: 1;
+    margin-top: 80px;
+    visibility: visible;
+}
+
+
+nav .lis li{  text-align: start;
+    color: white;  background-color: gray; border-radius: 20px; text-align: center;}
+
+nav .slider img{
+    height: 30px; width: 30px;
+    margin-bottom: 40px; z-index: 2;
+}
+.deliveryadd{
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+main{ height: 100vh; border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+
+main .postadd{ padding: 20px 20px 20px 20px;
+    display: flex; flex-direction: column; gap: 15px; height: 30vh; width: 40vw; justify-content: center; align-items: center; background-color: lightblue;
+}
+
+.postadd .postbox{
+    width: 40vw; height: 25vh; border: 1px solid black; border-style: dashed; text-align: center;
+}
+
+main .loginform{ border: 2px solid black;
+    display: none;
+    flex-direction: column; gap: 30px; 
+    height: 60vh; width: 60vh;
+    justify-content: center; align-items: center; 
+    background: rgb(255,255,255);
+background: linear-gradient(315deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+border-radius: 20px; margin-top: 20px; 
+animation: colorspin 1s linear;
+}
+
+@keyframes colorspin {
+    0%{
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+    10%{
+        background: rgb(255,255,255);
+        background: linear-gradient(40deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+
+    20%{
+        background: rgb(255,255,255);
+        background: linear-gradient(80deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+
+    30%{
+        background: rgb(255,255,255);
+        background: linear-gradient(120deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+
+    40%{
+        background: rgb(255,255,255);
+        background: linear-gradient(160deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+
+    50%{
+        background: rgb(255,255,255);
+        background: linear-gradient(200deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+
+    60%{
+        background: rgb(255,255,255);
+        background: linear-gradient(240deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+
+    70%{
+        background: rgb(255,255,255);
+        background: linear-gradient(280deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+    80%{
+        background: rgb(255,255,255);
+        background: linear-gradient(300deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+    90%{
+        background: rgb(255,255,255);
+        background: linear-gradient(310deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+    100%{
+        background: rgb(255,255,255);
+        background: linear-gradient(315deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+}
+
+main .loginform .login input{ height: 5vh; border: none; border-bottom: 1px solid black;
+    width: 20vw; padding: 0px 0px 0px 10px;
+}
+
+
+main .signupform{
+    display: none;
+   
+}
+
+main .signupform.show{display: grid;
+   }
+
+    
+@keyframes spincolor {
+    0%{
+        background: rgb(255,255,255);
+        background: linear-gradient(315deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+    10%{
+        background: rgb(255,255,255);
+        background: linear-gradient(310deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+
+    20%{
+        background: rgb(255,255,255);
+        background: linear-gradient(280deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+
+    30%{
+        background: rgb(255,255,255);
+        background: linear-gradient(230deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+
+    40%{
+        background: rgb(255,255,255);
+        background: linear-gradient(210deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+
+    50%{
+        background: rgb(255,255,255);
+        background: linear-gradient(200deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+
+    60%{
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+
+    70%{
+        background: rgb(255,255,255);
+        background: linear-gradient(160deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+    80%{
+        background: rgb(255,255,255);
+        background: linear-gradient(150deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+    90%{
+        background: rgb(255,255,255);
+        background: linear-gradient(140deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+    100%{
+        background: rgb(255,255,255);
+        background: linear-gradient(135deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+    }
+}
+
+.errorlogin{
+    color: white;
+}
+
+.dialo{
+    color: red; font-size: 20px; font-variant: small-caps; letter-spacing: 5px; text-align: center; margin-bottom: -40px; z-index: 1;
+}
+
+main .signupform_div{
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+   grid-template-columns: 100px 100px; column-gap: 70px;
+    height: 60vh; width: 60vh;
+   padding: 60px 10px 0px 60px;
+    background: rgb(255,255,255);
+background: linear-gradient(135deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+border-radius: 20px; 
+animation: spincolor 1s linear;
+
+
+}
+
+main .signupform_div input{
+    height: 20px; width: 10vw; padding: 0px 5px 0px 5px;
+}
+ 
+.signupform_div textarea{
+    height: 40px; width: 200px;
+}
+
+main .signupform_div button{
+    background-color: white; color: black;
+font-family: verdana; font-variant: small-caps; height: 40px; border: none; border-radius: 20px; text-align: center;  width: 100px; margin-left: 110px; cursor: pointer;}
+
+.thank{
+    font-size: 15px; color: green; font-family: verdana; font-variant: small-caps;
+}
+
+main .loginform .signup_div {
+    display: flex; gap: 100px; justify-content: center; align-items: center; margin-top: -10px;
+}
+ main .loginform a{ 
+     text-decoration: none; color: black; font-family: verdana; 
+}
+
+main .loginform button{
+    background-color: black; border: 1px solid black; color: white; border-radius: 20px; height: 30px; width: 70px; cursor: pointer;
+}
+
+.forgetp{
+    color: white;
+}
